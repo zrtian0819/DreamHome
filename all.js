@@ -1,9 +1,9 @@
 var app = new Vue({
     el: '#app',
     data:{
-      welcomeWords: 'Welcome to「夢想家」',
+      welcomeWords: '歡迎來到「夢想家」。',
       Homephoto: 'materials/photos/IMG_5719.JPG',
-      introduction: "由我來幫您找一個家!",
+      introduction: "由我來幫您找一個家❤!",
       producer:"Ren Tina Zhang",
       },
 
@@ -25,7 +25,7 @@ var app = new Vue({
           if (window.innerWidth < 860) {
             this.welcomeWords = '「夢想家」';
           }else{
-            this.welcomeWords = 'Welcome to「夢想家」'
+            this.welcomeWords = '歡迎來到「夢想家」。'
           }
       }
 
