@@ -11,8 +11,11 @@ html,body{
 }
 
 body{
-    position: relative;
     background-color: #2f2e2e;
+}
+
+.contnets{
+    position: relative;
 }
 
 .HomeImage>img{
@@ -20,33 +23,56 @@ body{
     z-index: -1;
 }
 
+.Homewords>*{
+    /* 暫時能看出邊界用的 */
+    border: 1px solid #000;
+}
+
 .Homewords{
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 70%;
+    z-index: 10;
+    padding: 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
-    position: absolute;
-    border: 5px solid #000;
-    z-index: 10;
+    align-items: center;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
+
+.Homewords:hover{
+    /* box-shadow: 10px 10px black; */
+    background-color: rgba(255, 255, 255, 0.8);
+
 }
 
 .Homewords h1{
+    margin: 0;
     font-size: 50px;
     padding: 10px;
 }
 
+.Homewords h3{
+    margin: 0;
+}
+
 .btn{
-    border: 2px solid lightblue;
+    /* border: 2px solid lightblue; */
     border-radius: 10px;
     padding: 10px 20px;
-    width: 45%;
+    width: 20%;
     background-color: orange;
     font-size: 30px;
     color:black;
     text-align: center;
+    font-weight: 700;
 }
 
-.btn>a{
+.Homewords a{
     text-decoration: none;  /*fail*/
 }
