@@ -14,18 +14,13 @@ body{
     background-color: #2f2e2e;
 }
 
-.contnets{
+.contents{
     position: relative;
 }
 
 .HomeImage>img{
     width: 100%;
     z-index: -1;
-}
-
-.Homewords>*{
-    /* 暫時能看出邊界用的 */
-    border: 1px solid #000;
 }
 
 .Homewords{
@@ -52,27 +47,63 @@ body{
 }
 
 .Homewords h1{
-    margin: 0;
+    margin: 0 0 10px 0;
     font-size: 50px;
     padding: 10px;
 }
 
 .Homewords h3{
-    margin: 0;
+    margin: 0 0 10px 0;
+
 }
 
 .btn{
     /* border: 2px solid lightblue; */
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 10px 20px;
-    width: 20%;
+    /* width: 20%; */
     background-color: orange;
-    font-size: 30px;
+    font-size: 20px;
     color:black;
     text-align: center;
     font-weight: 700;
+    
 }
 
 .Homewords a{
-    text-decoration: none;  /*fail*/
+    text-decoration: none; 
+}
+
+@media (max-width: 1253px) {
+    /*當頁面寬小於背景圖片大小時的處理*/
+    .HomeImage>img{
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+
+    .Homewords{
+        width: 320px;
+        /* min-width: 320px; */
+    }
+
+    .Homewords h1{
+        /* font-size: 6vw; */
+        font-size: 50px;
+    }
+
+    .Homewords h3{
+        /* font-size: 4vw; */
+    }
+
+    .btn{
+        font-size: 15px;
+    }
+
+
+
 }
