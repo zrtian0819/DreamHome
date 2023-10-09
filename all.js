@@ -1,6 +1,8 @@
 var app = new Vue({
     el: '#app',
     data:{
-      text:'夢想家'
+      welcomeWords: '歡迎來到「夢想家」',
+      Homephoto: 'materials/photos/IMG_5719.JPG',
+      introduction: ""
     }
   })

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
     <title>夢想家</title>
     <link rel="stylesheet" href="CSS/Homestyle.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
@@ -10,8 +10,16 @@
 <body>
     
     <div id="app">
-        <div class="homeImage"></div>
-        <a class="btn home" href="homepage.html">進入首頁</a>
+        <div class="HomeImage" >
+            <img :src="Homephoto" alt="your home">
+        </div>
+        
+        <div class="Homewords">
+            <h1>{{welcomeWords}}</h1>
+            <h3 v-text="introduction"></h3>
+            <a class="btn" href="homepage.html">進入首頁</a>
+        </div>
+
     </div>
 
     <script src="all.js"></script>
