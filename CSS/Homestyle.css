@@ -28,7 +28,7 @@ body{
     width: 600px;
     z-index: 10;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 14px;
 
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@ body{
     left:50%;
     transform: translate(-50%, -50%);
     transition: 0.3s;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
 }
 
 .Homewords:hover{
@@ -58,32 +58,59 @@ body{
 
 .Homewords h3{
     margin: 0 0 20px 0;
-    color: #F7BAC5;
-    text-shadow: 0 0 20px black;
+    color:white;
+    text-shadow: 0 0 30px black;
+    font-weight: 500;
 
 }
 
 .btn{
     /* border: 2px solid lightblue; */
-    border-radius: 15px;
-    padding: 10px 20px;
+    border-radius: 12px;
+    padding: 7px 15px;
     /* width: 20%; */
     background-color: orange;
+    /* background: linear-gradient(150deg,orange,rgb(237, 160, 17)); */
+    box-shadow: inset 7px 7px 7px rgb(250, 196, 97) , inset -5px -5px 7px rgb(211, 137, 0) ;
     font-size: 20px;
     color:black;
     text-align: center;
     font-weight: 700;
     transition: 0.3s;
-    
 }
 
 .btn:hover{
-    background-color: rgb(255, 215, 142);
+    /* background: linear-gradient(720deg,orange,rgb(237, 160, 17)); */
+    box-shadow: inset 10px 10px 10px rgb(250, 196, 97) , inset -10px -10px 7px rgb(211, 137, 0);
+    transition: 0s;
+}
+
+.btn:active{
+    background: none;
+    background-color: orange;
+    box-shadow: inset 5px 5px 5px rgb(211, 137, 0) , inset -3px -3px 10px rgb(250, 196, 97);
+    /* transform: translate(0,2px) */
+    transform: scale(0.95);
 }
 
 .Homewords a{
     text-decoration: none; 
 }
+
+
+.producer{
+    position: fixed;
+    z-index: 10;
+    right: 20px;
+    bottom: 10px;
+    color: white;
+
+}
+
+.producer>p{
+    font-size: 1px;
+}
+
 
 @media (max-width: 1253px) {
     /*當頁面寬小於背景圖片大小時的處理*/

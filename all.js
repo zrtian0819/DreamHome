@@ -4,7 +4,7 @@ var app = new Vue({
       welcomeWords: '歡迎來到「夢想家」。',
       Homephoto: 'materials/photos/IMG_5719.JPG',
       introduction: "由我來幫您找一個家❤!",
-      producer:"Ren Tina Zhang",
+      producer:"Ren Tian Zhang",
       },
 
       watch: {
