@@ -11,7 +11,7 @@ html,body{
 }
 
 body{
-    background-color: #2f2e2e;
+    background-color: #4B5154;
 }
 
 .contents{
@@ -32,8 +32,8 @@ body{
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     position: fixed;
     top:50%;
     left:50%;
@@ -44,7 +44,7 @@ body{
 
 .Homewords:hover{
     /* box-shadow: 10px 10px black; */
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
     /* backdrop-filter: blur(5px); */
 
 }
@@ -53,21 +53,26 @@ body{
     margin: 0 0 10px 0;
     font-size: 50px;
     padding: 10px;
-    text-shadow: 0 0 50px white;
+    text-shadow: 0 0 10px white,0 0 50px white;
+    text-align: center;
 }
 
 .Homewords h3{
     margin: 0 0 20px 0;
     color:white;
-    text-shadow: 0 0 30px black;
-    font-weight: 500;
+    text-shadow: 0 0 3px black,0 0 50px white;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
 
 }
 
 .btn{
     /* border: 2px solid lightblue; */
     border-radius: 12px;
+    display: inline;
     padding: 7px 15px;
+
     /* width: 20%; */
     background-color: orange;
     /* background: linear-gradient(150deg,orange,rgb(237, 160, 17)); */
@@ -75,22 +80,23 @@ body{
     font-size: 20px;
     color:black;
     text-align: center;
-    font-weight: 700;
-    transition: 0.3s;
+    font-weight: 900;
+    transition: 0.5s;
 }
 
 .btn:hover{
     /* background: linear-gradient(720deg,orange,rgb(237, 160, 17)); */
     box-shadow: inset 10px 10px 10px rgb(250, 196, 97) , inset -10px -10px 7px rgb(211, 137, 0);
-    transition: 0s;
+    /* transition: 0s; */
 }
 
 .btn:active{
+    transition: 0s;
     background: none;
     background-color: orange;
     box-shadow: inset 5px 5px 5px rgb(211, 137, 0) , inset -3px -3px 10px rgb(250, 196, 97);
     /* transform: translate(0,2px) */
-    transform: scale(0.95);
+    transform: scale(0.98);
 }
 
 .Homewords a{
@@ -135,12 +141,9 @@ body{
     }
 
     .Homewords h3{
-        /* font-size: 4vw; */
+        font-size: 14px;
     }
 
-    .btn{
-        font-size: 15px;
-    }
 
 
 
