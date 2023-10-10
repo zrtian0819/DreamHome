@@ -6,19 +6,19 @@ var app = new Vue({
       linkButton:[
         {
             title:'找租屋',
-            link:''
+            link:'#bottom'
         },
         {
             title:'找房子',
-            link:''
+            link:'#bottom'
         },
         {
             title:'找土地',
-            link:''
+            link:'#bottom'
         },
         {
             title:'聯繫我',
-            link:''
+            link:'#bottom'
         }
 
       ]

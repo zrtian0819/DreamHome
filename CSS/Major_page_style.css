@@ -22,7 +22,7 @@ a{
     text-decoration: none;
 }
 
-.top{
+.caption{
     width: 100%;
     background-image: url(https://media.istockphoto.com/id/1272163106/zh/%E7%85%A7%E7%89%87/%E5%B8%B6%E9%99%A1%E5%B3%AD%E5%B1%8B%E9%A0%82%E5%92%8C%E5%81%B4%E5%85%A5%E5%8F%A3%E7%9A%84%E5%A4%A7%E6%88%BF%E5%AD%90%E4%B8%89%E5%80%8B%E8%BB%8A%E5%BA%AB.jpg?s=2048x2048&w=is&k=20&c=5HlfbeW4zWLHMOurAXB1dMHxcuam27MXwNvQOjae7As=);
     /* background-image: url(); */
@@ -42,7 +42,7 @@ a{
     height: 70px;
 }
 
-.top h1{
+.caption h1{
     padding: 10px 0px;
     color: white;
     text-shadow: 0 0 5px #000 ,0 0 20px #000;
@@ -56,11 +56,13 @@ a{
     justify-content: center;
     align-items: center;
 
+    position: sticky;
+    top:0;
 }
 
 
 
-.top .btn{
+.link .btn{
     font-size: 15px;
     display: inline-block;
     width: 100px;
@@ -70,11 +72,9 @@ a{
     /* border: 1px solid gray; */
     transition: 0.3s;
 
-    position: sticky;
-    top: 0;
 }
 
-.top .btn:hover{
+.link .btn:hover{
     background-color: gray;
     font-weight: 700;
 }
