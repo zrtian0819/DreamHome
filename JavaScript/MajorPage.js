@@ -24,3 +24,4 @@ var app = new Vue({
       ]
     }
   })
+
