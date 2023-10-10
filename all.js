@@ -2,7 +2,7 @@ var app = new Vue({
     el: '#app',
     data:{
       welcomeWords: '歡迎來到「夢想家」',
-      Homephoto: 'materials/photos/IMG_5730.JPG',
+      Homephoto: 'materials/photos/IMG_5731.JPG',
       introduction: "我是「亞琴」，讓我來幫您找一個家❤",
       producer:"Ren Tian Zhang",
       },
