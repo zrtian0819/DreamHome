@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~~夢想家~~</title>
+    <title>夢想家</title>
     <link rel="stylesheet" href="CSS/Major_page_style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
@@ -11,9 +11,7 @@
     <div id="top" class="top">
         <h1>「夢想家。」</h1>
         <div id='linkList' class="link" >
-            <a href="#top" class="btn">找租屋</a>
-            <a href="#middle" class="btn">找房子</a>
-            <a href="#bottom" class="btn">找土地</a>
+            <a v-for='i in linkButton' :href='i.link' class="btn">{{ i.title }}</a>
         </div>
     </div>
 
@@ -24,5 +22,9 @@
     <div id="bottom" class="bot">
         <h1>Shoes</h1>
     </div>
+
+
+
+    <script src="JavaScript/MajorPage.js"></script>
 </body>
 </html>
