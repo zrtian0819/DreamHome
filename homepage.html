@@ -13,8 +13,8 @@
         <h1>「夢想家。」</h1>
     </div>
 
+    <!-- 各種連結 -->
     <div id='linkList' class="link" >
-        <!-- 各種連結 -->
         <a v-for='i in linkButton' :href='i.link' class="btn">{{ i.title }}</a>
     </div>
 
@@ -25,7 +25,13 @@
     </div>
 
     <div id="bottom" class="bot">
-        <h1>Shoes</h1>
+        <h2>{{ linkPressWords }}</h2>
+        <div>
+            <a v-for="j in Icon" :href="j.link" v-show='j.display' class="icon">
+                <img :src="j.src">
+            </a>
+        </div>
+        
     </div>
 
 
