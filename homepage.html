@@ -20,13 +20,15 @@
 
 
     <div id="middle" class="mid">
-        <h1>Body</h1>
-        <p>網站還在建設中</p>
+        <h1>找房子?</h1>
+        <p>但網頁還未完成</p>
+
+        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@yachinchen" data-unique-id="yachinchen" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@yachinchen?refer=creator_embed">@yachinchen</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
     </div>
 
     <div id="bottom" class="bot">
         <h2>{{ linkPressWords }}</h2>
-        <div>
+        <div class="icons">
             <a v-for="j in Icon" :href="j.link" v-show='j.display' class="icon">
                 <img :src="j.src">
             </a>
@@ -34,7 +36,7 @@
         
     </div>
 
-
+    
 
     <script src="JavaScript/MajorPage.js"></script>
 </body>

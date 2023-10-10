@@ -55,7 +55,7 @@ var app = new Vue({
         },
         {
           name:'Tiktok',
-          link:'https://vt.tiktok.com/ZSNYAyfW3/',
+          link:'https://www.tiktok.com/@yachinchen?_d=secCgYIASAHKAESPgo85u0d3xwkHv7q7lU3fc07YeF7XZk1UNmX9PLUhtMqmlZlO3SYW70CzFjHusjY%2Bln5aKwsSvM2ElmMI6yuGgA%3D&object_id=7177655001404376069&page_open_method=scan_code&schema_type=4&sec_uid=MS4wLjABAAAAiGmyrasyY2_Aj6H50INmY2WIK8EDt-44AWjQ79zZcd7EWIeen21eS_GqhmKPXUgE&share_app_id=1180&share_author_id=7177655001404376069&share_uid=7177655001404376069&tt_from=scan_code&utm_campaign=client_scan_code&utm_medium=1&utm_source=scan_code&_r=1',
           src:'materials/icons/tik-tok_3046120.png',
           display:true
         },
