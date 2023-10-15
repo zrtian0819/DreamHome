@@ -6,20 +6,24 @@ var app = new Vue({
       linkButton:
       [
         {
+          title:'關於我',
+          link:'contact_me.html',
+          style:"btn link-active"
+        },
+        {
             title:'找租屋',
-            link:'#bottom'
+            link:'#bottom',
+            style:"btn"
         },
         {
             title:'找房子',
-            link:'#bottom'
+            link:'#bottom',
+            style:"btn"
         },
         {
             title:'找土地',
-            link:'#bottom'
-        },
-        {
-            title:'關於我',
-            link:'contact_me.html'
+            link:'#bottom',
+            style:"btn"
         }
       ],
 
@@ -32,7 +36,7 @@ var app = new Vue({
     // 標題按鈕的Vue
     el: '#bottom',
     data:{
-      linkPressWords:'想看更多?',
+      linkPressWords:'想看更多嗎?',
       Icon:
       [
         {
@@ -64,3 +68,22 @@ var app = new Vue({
     }
   })
 
+
+var app = new Vue({
+  // 標題按鈕的Vue
+  el: '#middle',
+  data:{
+    name:'陳亞琴',
+
+    // photo:{
+    //   profile:{src:'123'}
+    // }
+    
+    photo:{
+      profilePhoto:{name:'個人照片' ,src:'123'},
+      line:{line:'LINE',src:'materials/Logo/LINE.png'}
+    }
+      
+
+  }
+})

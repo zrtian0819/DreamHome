@@ -5,6 +5,7 @@ var app = new Vue({
       Homephoto: 'materials/photos/IMG_5731.JPG',
       introduction: "我是「亞琴」，讓我來幫您找一個家❤",
       producer:"Ren Tian Zhang",
+      GoLink:'AboutMe.html'
       },
 
       watch: {

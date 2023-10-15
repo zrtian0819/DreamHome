@@ -8,6 +8,10 @@ html,body{
     margin: 0;
 }
 
+html{
+    /* background-color: #2C2B32; */
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -36,9 +40,8 @@ a{
     justify-content: center;
     align-items: center;
 
-
 }
-.top .caption{
+header{
     height: 70px;
 }
 
@@ -79,15 +82,19 @@ a{
     font-weight: 700;
 }
 
-.mid{
+.link-active{
+    background-color: #141316;
+}
+
+/* .mid{
     width: 100%;
-    /* height: 800px; */
+    height: 800px;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 .bot{
     width: 100%;

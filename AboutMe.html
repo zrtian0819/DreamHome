@@ -5,29 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>夢想家</title>
     <link rel="stylesheet" href="CSS/Major_page_style.css">
+    <link rel="stylesheet" href="CSS/AboutMe.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body>
 
-    <div class="caption">
+    <header class="caption">
         <h1>「夢想家。」</h1>
-    </div>
+    </header>
 
     <!-- 各種連結 -->
     <div id='linkList' class="link" >
-        <a v-for='i in linkButton' :href='i.link' class="btn">{{ i.title }}</a>
+        <a v-for='i in linkButton' :href='i.link' :class="i.style">{{ i.title }}</a>
     </div>
 
 
-    <div id="middle" class="mid">
-        <h1>找房子?</h1>
-        <p>先打給我吧? 0915309185</p>
+    <main id="middle" class="mid">
+        <div class="introducing_card">
+            <div class="left">
+                <img :src="photo.profilePhoto.src" :alt="photo.profilePhoto.name">
+            </div>
+            <div class="right">
+                <h1 class="name">{{name}}</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quae atque perspiciatis debitis, iure illo autem vel repellendus. Ea, quos eum, dolores illo iste ipsam fuga aspernatur officiis fugiat, ipsa deserunt et accusantium odio veniam voluptatibus. Accusamus, nisi ratione maxime minus similique animi laborum sed! Ad est eaque libero odio!</p>
+                
+                <div class="line_info">
+                    <img class="linePhoto" :src="photo.line.src" :alt="photo.line.name">
+                    <h3>Line ID:</h3>
+                </div>
 
+            </div>
+        </div>
+
+        <h1>聯絡地點</h1>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1333.5127455693173!2d121.29824038439978!3d24.964308888506405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681f37cf221fe9%3A0x66f13838ddd1877a!2z44CQ5aSq5bmz5rSL5oi_5bGL44CRIOWPi-aIkOWkp-a5s-WKoOebn-W6lw!5e0!3m2!1szh-TW!2stw!4v1696950790830!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h1>抖音</h1>
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@yachinchen" data-unique-id="yachinchen" data-embed-type="creator" style="max-width: 780px; min-width: 288px;" > <section> <a target="_blank" href="https://www.tiktok.com/@yachinchen?refer=creator_embed">@yachinchen</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-    </div>
+    </main>
 
-    <div id="bottom" class="bot">
+    <footer id="bottom" class="bot">
         <h2>{{ linkPressWords }}</h2>
         <div class="icons">
             <a v-for="j in Icon" :href="j.link" v-show='j.display' class="icon">
@@ -35,7 +51,7 @@
             </a>
         </div>
         
-    </div>
+    </footer>
 
     
 
