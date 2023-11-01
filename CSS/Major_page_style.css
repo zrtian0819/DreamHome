@@ -1,89 +1,92 @@
-*{
-    /* border: 1px solid #000; */
-    font-family: sans-serif, 微軟正黑體;
-    box-sizing: border-box;
+* {
+  /* border: 1px solid #000; */
+  font-family: sans-serif, 微軟正黑體;
+  box-sizing: border-box;
 }
 
-html,body{
-    margin: 0;
+html,
+body {
+  margin: 0;
 }
 
-html{
-    /* background-color: #2C2B32; */
+html {
+  scroll-behavior: smooth;
+  /* background-color: #2C2B32; */
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-h1,h2,h3,h4,h5{
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.caption{
-    width: 100%;
-    background-image: url(https://media.istockphoto.com/id/1272163106/zh/%E7%85%A7%E7%89%87/%E5%B8%B6%E9%99%A1%E5%B3%AD%E5%B1%8B%E9%A0%82%E5%92%8C%E5%81%B4%E5%85%A5%E5%8F%A3%E7%9A%84%E5%A4%A7%E6%88%BF%E5%AD%90%E4%B8%89%E5%80%8B%E8%BB%8A%E5%BA%AB.jpg?s=2048x2048&w=is&k=20&c=5HlfbeW4zWLHMOurAXB1dMHxcuam27MXwNvQOjae7As=);
-    /* background-image: url(); */
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
-    overflow: hidden;
+.caption {
+  width: 100%;
+  /* background-image: url(https://media.istockphoto.com/id/1272163106/zh/%E7%85%A7%E7%89%87/%E5%B8%B6%E9%99%A1%E5%B3%AD%E5%B1%8B%E9%A0%82%E5%92%8C%E5%81%B4%E5%85%A5%E5%8F%A3%E7%9A%84%E5%A4%A7%E6%88%BF%E5%AD%90%E4%B8%89%E5%80%8B%E8%BB%8A%E5%BA%AB.jpg?s=2048x2048&w=is&k=20&c=5HlfbeW4zWLHMOurAXB1dMHxcuam27MXwNvQOjae7As=); */
+  background-image: url(/materials/photos/Homepage_photo.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-header{
-    height: 70px;
-}
-
-.caption h1{
-    padding: 10px 0px;
-    color: white;
-    text-shadow: 0 0 5px #000 ,0 0 20px #000;
-    font-size: 40px;
+header {
+  height: 70px;
 }
 
-.link{
-    width: 100%;
-    background-color: #2C2B32;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: sticky;
-    top:0;
+.caption h1 {
+  padding: 10px 0px;
+  color: white;
+  text-shadow: 0 0 5px #000, 0 0 20px #000;
+  font-size: 40px;
 }
 
+.link {
+  width: 100%;
+  background-color: #2c2b32;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-.link .btn{
-    font-size: 15px;
-    display: inline-block;
-    width: 100px;
-    padding: 5px 0;
-    text-align: center;
-    color: white;
-    /* border: 1px solid gray; */
-    transition: 0.3s;
-
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-.link .btn:hover{
-    background-color: gray;
-    font-weight: 700;
+.link .btn {
+  font-size: 15px;
+  display: inline-block;
+  width: 100px;
+  padding: 5px 0;
+  text-align: center;
+  color: white;
+  /* border: 1px solid gray; */
+  transition: 0.3s;
 }
 
-.link-active{
-    background-color: #141316;
+.link .btn:hover {
+  background-color: gray;
+  font-weight: 700;
+}
+
+.link-active {
+  background-color: #141316;
 }
 
 /* .mid{
@@ -96,40 +99,36 @@ header{
     flex-direction: column;
 } */
 
-.bot{
-    width: 100%;
-    padding: 20px;
-    background-color: #CBAE88;
-    box-shadow: inset 0px 10px 10px #927E62;
+.bot {
+  width: 100%;
+  padding: 20px;
+  background-color: #cbae88;
+  box-shadow: inset 0px 10px 10px #927e62;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.bot h2{
-    margin-bottom: 10px;
-    color:#2F4559;
+.bot h2 {
+  margin-bottom: 10px;
+  color: #2f4559;
 }
 
-
-.icons a{
-    display: inline-block;
+.icons a {
+  display: inline-block;
 }
 
-.icons a img{
-    margin: 0 10px 0 10px;
-    width: 40px;
-    height: 40px;
+.icons a img {
+  margin: 0 10px 0 10px;
+  width: 40px;
+  height: 40px;
 }
 
-
-@media (max-width: 768px) {
-
-    .mid iframe{
-        width: 100%;
-        height: 50vw;
-    }
-
+.icon {
+  transition: 0.3s;
+}
+.icon:hover {
+  transform: scale(1.3);
 }

@@ -1,53 +1,168 @@
-main *{
-    border: 1px solid #000;
+main * {
+  /* border: 1px solid white; */
 }
 
-main{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+main {
+  /* padding: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-color: #f7f6ee;
+  background-image: url(/materials/photos/鄉村背景.jpg);
+  transition: 1s;
+}
+
+main h1 {
+  margin: 20px 0 10px 0;
+  color: #f7f6ee;
+}
+
+.bgc {
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+.bgc img {
+  width: 100%;
+  height: auto;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* position: absolute; */
+}
+
+.introducing_card {
+  height: 370px;
+  width: 700px;
+  /* padding: 20px; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #f7f6ee;
+}
+
+.PersonalPhoto {
+  height: 100%;
+  background-position: center center;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* object-fit: cover; */
+}
+
+.introducing_card .left {
+  height: 100%;
+  /* flex: 4; */
+}
+
+.introducing_card .right {
+  height: 100%;
+  /* flex: 6; */
+  padding: 30px 15px;
+  /* overflow: auto; */
+}
+
+.line_info {
+  display: flex;
+  margin-top: 10px;
+  /* justify-content: center; */
+}
+
+.line_info * {
+  display: inline-block;
+}
+
+.linePhoto {
+  width: 30px;
+  height: 30px;
+}
+
+iframe {
+  border-radius: 30px;
+  margin-bottom: 40px;
+  transition: 0.5s;
+}
+
+.location,
+.shake {
+  width: 70%;
+}
+
+.location h1 {
+  text-align: right;
+}
+
+.doNotAttach {
+  width: 100%;
+}
+
+.goleft {
+  position: relative;
+  right: 10vw;
+  transition: 0.2s;
+}
+
+.goright {
+  position: relative;
+  left: 10vw;
+  transition: 0.2s;
+}
+
+.goleft:hover {
+  transform: scale(1.03) rotate(-2deg);
+}
+
+.goright:hover {
+  transform: scale(1.03) rotate(2deg);
+}
+
+@media (max-width: 768px) {
+  .introducing_card {
     flex-direction: column;
-}
+    height: auto;
+    width: 75%;
+    padding: 0;
+  }
 
-main h1{
-    margin-top: 20px;
-}
+  .introducing_card h2 {
+    text-align: center;
+  }
 
-.introducing_card{
-    height: 400px;
-    width: 700px;
+  .introducing_card .left {
+    /* width: 100%; */
+    height: 60vh;
+  }
+
+  .introducing_card .right {
     padding: 20px;
+  }
+
+  .line_info {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50px 0 0 0;
-    /* background-color: black; */
-    box-shadow: 7px 7px 30px rgb(185, 185, 185), inset 15px 15px 30px white;
-}
+  }
 
-.introducing_card .left{
-    height: 100%;
-    flex:4;
-    border-right: 1px solid #171b3a;
-}
+  .doNotAttach {
+    width: 70% !important;
+    /* max-width: 80% !important; */
+  }
 
-.introducing_card .right{
-    height: 100%;
-    flex:6;
-    padding: 10px 30px;
-}
+  .goleft,
+  .goright {
+    position: static !important;
+  }
 
-.line_info{
+  .about_me,
+  .location,
+  .shake {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-}
-
-.line_info *{
-    display: inline-block;
-}
-
-.linePhoto{
-    width: 50px;
-    height: 50px;
+    align-items: center;
+    width: 100%;
+  }
 }
