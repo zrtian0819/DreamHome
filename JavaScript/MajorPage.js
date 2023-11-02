@@ -74,9 +74,9 @@ var app = new Vue({
     // }
 
     photo: {
-      profilePhoto: { name: "個人照片", src: "/materials/photos/Yachin.jpg" },
-      bgc: { name: "美麗的背景", src: "/materials/photos/鄉村背景.jpg" },
-      line: { line: "LINE", src: "materials/Logo/LINE.png" },
+      profilePhoto: { name: "個人照片", src: "./materials/photos/Yachin.jpg" },
+      bgc: { name: "美麗的背景", src: "./materials/photos/鄉村背景.jpg" },
+      line: { line: "LINE", src: "./materials/Logo/LINE.png" },
     },
   },
 });
