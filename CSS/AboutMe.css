@@ -10,7 +10,7 @@ main {
   flex-direction: column;
   position: relative;
   background-color: #f7f6ee;
-  background-image: url(/materials/photos/鄉村背景.jpg);
+  background-image: url(./materials/photos/鄉村背景.jpg);
   transition: 1s;
 }
 
