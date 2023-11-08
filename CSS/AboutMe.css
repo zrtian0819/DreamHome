@@ -62,8 +62,20 @@ main h1 {
 .introducing_card .right {
   height: 100%;
   /* flex: 6; */
-  padding: 30px 15px;
+  padding: 20px 30px;
   /* overflow: auto; */
+}
+
+.right h2 {
+  margin-top: 10px;
+  font-size: 2rem;
+}
+
+.right p {
+  letter-spacing: 1.5px;
+  line-height: 20px;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 .line_info {
@@ -143,9 +155,10 @@ iframe {
   }
 
   .introducing_card .right {
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     background-color: #f7f6ee;
+    /* min-width: 300px; */
   }
 
   .line_info {

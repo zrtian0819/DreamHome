@@ -36,7 +36,7 @@ var app = new Vue({
     Icon: [
       {
         name: "Facebook",
-        link: "https://www.facebook.com/groups/330793587320368",
+        link: "https://www.facebook.com/yachin4857?mibextid=9R9pXO",
         src: "materials/icons/facebook_1384021.png",
         display: true,
       },
@@ -66,7 +66,7 @@ var app = new Vue({
   // 標題按鈕的Vue
   el: "#middle",
   data: {
-    name: "❤️陳亞琴",
+    name: "陳亞琴❤️",
     lineId: "cyc1666",
 
     // photo:{
