@@ -9,8 +9,8 @@ main {
   align-items: center;
   flex-direction: column;
   position: relative;
-  background-color: #f7f6ee;
-  background-image: url(./materials/photos/鄉村背景.jpg);
+  background-color: #938155;
+  background-image: url(../materials/photos/鄉村背景.jpg);
   transition: 1s;
 }
 
@@ -43,6 +43,7 @@ main h1 {
   align-items: center;
   border-radius: 30px;
   background-color: #f7f6ee;
+  margin-top: 7vh;
 }
 
 .PersonalPhoto {
@@ -82,13 +83,18 @@ main h1 {
 
 iframe {
   border-radius: 30px;
-  margin-bottom: 40px;
-  transition: 0.5s;
+  margin-bottom: 20px;
+  width: 100%;
+  /* transition: 0.5s; */
 }
 
 .location,
 .shake {
   width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .location h1 {
@@ -96,35 +102,29 @@ iframe {
 }
 
 .doNotAttach {
-  width: 100%;
+  /* width: 70%; */
 }
 
 .goleft {
   position: relative;
-  right: 10vw;
+  /* right: 10px; */
   transition: 0.2s;
 }
 
 .goright {
   position: relative;
-  left: 10vw;
+  /* left: 10px; */
   transition: 0.2s;
-}
-
-.goleft:hover {
-  transform: scale(1.03) rotate(-2deg);
-}
-
-.goright:hover {
-  transform: scale(1.03) rotate(2deg);
 }
 
 @media (max-width: 768px) {
   .introducing_card {
     flex-direction: column;
     height: auto;
-    width: 75%;
+    width: 70%;
     padding: 0;
+    background: none;
+    overflow: visible;
   }
 
   .introducing_card h2 {
@@ -133,11 +133,19 @@ iframe {
 
   .introducing_card .left {
     /* width: 100%; */
-    height: 60vh;
+    height: 40vh;
+  }
+
+  .PersonalPhoto {
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
   }
 
   .introducing_card .right {
     padding: 20px;
+    border-radius: 20px;
+    background-color: #f7f6ee;
   }
 
   .line_info {
@@ -154,6 +162,11 @@ iframe {
   .goleft,
   .goright {
     position: static !important;
+  }
+
+  .goleft:hover,
+  .goright:hover {
+    transform: none;
   }
 
   .about_me,
