@@ -29,7 +29,9 @@
         <div id="objcards" class="objcards">
           <!-- 單張卡 -->
           <div v-for="obj in cards" class="objcard hoverZoomIn">
-            <div class="photo"><img :src="obj.photoLink" alt="" /></div>
+            <div class="photo">
+              <img :src="obj.photoLink" alt="房屋照片" />
+            </div>
             <div class="cardinfo">
               <h1 class="objname">{{ obj.objName }}</h1>
               <span>{{ obj.city }}</span>
@@ -38,13 +40,19 @@
                 >{{ Math.round(obj.price*1.05) }}萬</span
               >
               <span class="objprice">{{ obj.price }}萬</span>
-              <div class="WantToSee">我想看更多...</div>
+              <div class="WantToSee">看更多...</div>
               <div v-show="obj.discount" class="lowprice">賣方降價</div>
             </div>
           </div>
           <!-- 單張卡 -->
         </div>
       </div>
+
+      <!-- <ul class="pages">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul> -->
     </main>
 
     <footer id="bottom" class="bot">

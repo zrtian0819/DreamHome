@@ -34,6 +34,28 @@ var app = new Vue({
         price: "866",
         discount: true,
       },
+      {
+        objName: "荒郊寧靜別墅2",
+        photoLink:
+          "https://www.howlawyer.com.tw/wp-content/uploads/2019/07/joint-venture-advocate-success-win-the-case-return-s.jpg",
+        city: "觀音區",
+        address: "",
+        objType: "透天別墅",
+        spaceDiv: "三房兩廳一衛浴",
+        price: "866",
+        discount: false,
+      },
+      {
+        objName: "荒郊寧靜別墅3",
+        photoLink:
+          "https://www.howlawyer.com.tw/wp-content/uploads/2019/07/joint-venture-advocate-success-win-the-case-return-s.jpg",
+        city: "觀音區",
+        address: "",
+        objType: "透天別墅",
+        spaceDiv: "三房兩廳一衛浴",
+        price: "759",
+        discount: true,
+      },
     ],
   },
 });
