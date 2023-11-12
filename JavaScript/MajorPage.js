@@ -10,12 +10,12 @@ var app = new Vue({
         style: "btn link-active",
       },
       {
-        title: "找租屋",
-        link: "#bottom",
+        title: "找房子",
+        link: "Findhouse.html",
         style: "btn",
       },
       {
-        title: "找房子",
+        title: "找租屋",
         link: "#bottom",
         style: "btn",
       },

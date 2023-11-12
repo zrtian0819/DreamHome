@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>夢想家-找房子</title>
+    <link rel="stylesheet" href="CSS/Major_page_style.css" />
+    <link rel="stylesheet" href="CSS/Findhouse.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  </head>
+  <body>
+    <header class="caption">
+      <h1>「夢想家。」</h1>
+    </header>
+
+    <!-- 各種連結 -->
+    <div id="linkList" class="link">
+      <a v-for="i in linkButton" :href="i.link" :class="i.style"
+        >{{ i.title }}</a
+      >
+    </div>
+
+    <main id="middle" class="mid">
+      <!-- <div class="searchBar">
+        <input type="text" />
+      </div> -->
+
+      <div class="objectRegion">
+        <div id="objcards" class="objcards">
+          <!-- 單張卡 -->
+          <div v-for="obj in cards" class="objcard hoverZoomIn">
+            <div class="photo"><img :src="obj.photoLink" alt="" /></div>
+            <div class="cardinfo">
+              <h1 class="objname">{{ obj.objName }}</h1>
+              <span>{{ obj.city }}</span>
+              <span class="objtype">{{ obj.objType }}</span>
+              <div class="objprice">{{ obj.price }}萬</div>
+              <div class="WantToSee">我想看更多...</div>
+            </div>
+          </div>
+          <!-- 單張卡 -->
+        </div>
+      </div>
+    </main>
+
+    <footer id="bottom" class="bot">
+      <h2>{{ linkPressWords }}</h2>
+      <div class="icons">
+        <a v-for="j in Icon" :href="j.link" v-show="j.display" class="icon">
+          <img :src="j.src" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="JavaScript/MajorPage.js"></script>
+    <script src="JavaScript/findhouse.js"></script>
+  </body>
+</html>

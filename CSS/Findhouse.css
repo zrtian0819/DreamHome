@@ -1,0 +1,85 @@
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mid * {
+  /* border: 1px solid #000; */
+  box-sizing: border-box;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0 20px 0;
+}
+
+.objectRegion {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.objcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 30px 50px;
+}
+
+.objcard {
+  width: 230px;
+  height: 300px;
+  margin: 10px;
+  box-shadow: 3px 3px 7px #bababa;
+  min-width: 230px;
+  background-color: #f7f6ee;
+}
+.objcard:hover {
+  box-shadow: 0 0 20px #bababa;
+}
+
+.photo > img {
+  width: 100%;
+}
+
+.cardinfo {
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+}
+
+.objtype {
+  color: #0066d1;
+}
+
+.objprice {
+  color: red;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.WantToSee {
+  font-size: 14px;
+  color: green;
+}
+
+.WantToSee {
+  align-self: flex-end;
+}
+
+@media (max-width: 768px) {
+  .objcards {
+    width: 100%;
+    padding: 20px;
+  }
+}
