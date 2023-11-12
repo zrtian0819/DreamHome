@@ -11,7 +11,7 @@ var app = new Vue({
         objType: "透天別墅",
         spaceDiv: "三房兩廳一衛浴",
         price: "1025",
-        discountDes: "",
+        discount: false,
       },
       {
         objName: "森林系別墅",
@@ -21,7 +21,7 @@ var app = new Vue({
         objType: "透天別墅",
         spaceDiv: "三房兩廳一衛浴",
         price: "794",
-        discountDes: "屋主降價",
+        discount: false,
       },
       {
         objName: "荒郊寧靜別墅",
@@ -32,7 +32,7 @@ var app = new Vue({
         objType: "透天別墅",
         spaceDiv: "三房兩廳一衛浴",
         price: "866",
-        discountDes: "屋主降價",
+        discount: true,
       },
     ],
   },
