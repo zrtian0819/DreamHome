@@ -61,22 +61,3 @@ var app = new Vue({
     ],
   },
 });
-
-var app = new Vue({
-  // 標題按鈕的Vue
-  el: "#middle",
-  data: {
-    name: "陳亞琴❤️",
-    lineId: "cyc1666",
-
-    // photo:{
-    //   profile:{src:'123'}
-    // }
-
-    photo: {
-      profilePhoto: { name: "個人照片", src: "./materials/photos/Yachin.jpg" },
-      bgc: { name: "美麗的背景", src: "./materials/photos/鄉村背景.jpg" },
-      line: { line: "LINE", src: "./materials/Logo/LINE.png" },
-    },
-  },
-});

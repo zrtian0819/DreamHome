@@ -1,4 +1,5 @@
 main * {
+  /* border: 1px solid black; */
   /* border: 1px solid white; */
 }
 
@@ -34,8 +35,8 @@ main h1 {
 }
 
 .introducing_card {
-  height: 370px;
-  width: 700px;
+  height: 420px;
+  width: 730px;
   /* padding: 20px; */
   overflow: hidden;
   display: flex;
@@ -62,20 +63,36 @@ main h1 {
 .introducing_card .right {
   height: 100%;
   /* flex: 6; */
-  padding: 20px 30px;
+  padding: 10px 30px;
   /* overflow: auto; */
 }
 
 .right h2 {
-  margin-top: 10px;
+  margin-top: 5px;
   font-size: 2rem;
 }
 
 .right p {
+  margin-top: 5px;
   letter-spacing: 1.5px;
   line-height: 20px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
+}
+
+.ServerStuff {
+  background-color: #cbae88;
+  padding: 5px;
+  margin: 3px 5px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: 0.3s;
+  font-size: 10px;
+}
+.ServerStuff:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 50px #ffd59a;
 }
 
 .line_info {
@@ -190,5 +207,12 @@ iframe {
     justify-content: center;
     align-items: center;
     width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .right h2 {
+    margin-top: 5px;
+    font-size: 1.5rem;
   }
 }
