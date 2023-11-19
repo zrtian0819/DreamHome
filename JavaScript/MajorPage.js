@@ -1,4 +1,4 @@
-var app = new Vue({
+var navLink = new Vue({
   // 標題按鈕的Vue
   el: "#linkList",
   data: {
@@ -7,7 +7,7 @@ var app = new Vue({
       {
         title: "關於我",
         link: "AboutMe.html",
-        style: "btn link-active",
+        style: "btn",
       },
       {
         title: "找房子",
@@ -28,7 +28,7 @@ var app = new Vue({
   },
 });
 
-var app = new Vue({
+var bottomObj = new Vue({
   // 標題按鈕的Vue
   el: "#bottom",
   data: {

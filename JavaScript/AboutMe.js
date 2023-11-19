@@ -1,3 +1,6 @@
+// 為了讓navbar正常運作的代碼
+navLink._data.linkButton[0].style = "btn link-active";
+
 var app = new Vue({
   // 標題按鈕的Vue
   el: "#middle",

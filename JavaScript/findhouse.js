@@ -1,3 +1,6 @@
+// 為了讓navbar正常運作的代碼
+navLink._data.linkButton[1].style = "btn link-active";
+
 var app = new Vue({
   el: "#objcards",
   data: {

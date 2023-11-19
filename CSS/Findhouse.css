@@ -12,10 +12,12 @@
 
 .searchBar {
   width: 100%;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0 20px 0;
+  padding: 30px 0 20px 0;
+  background-color: #bababa;
 }
 
 .objectRegion {
@@ -23,12 +25,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* min-height: 500px; */
 }
 
 .objcards {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   width: 90%;
   /* padding: 20px 30px; */
@@ -39,12 +42,13 @@
 .objcard {
   width: 230px;
   height: 300px;
-  margin: 10px;
+  margin: 15px;
   box-shadow: 3px 3px 7px #bababa;
   min-width: 230px;
   background-color: #f7f6ee;
   position: relative;
   overflow: hidden;
+  border-radius: 5px;
 }
 .objcard:hover {
   box-shadow: 0 0 20px #bababa;
@@ -101,8 +105,9 @@
 
 .lowprice {
   position: absolute;
+  font-size: 20px;
   top: 20px;
-  right: -45px;
+  right: -55px;
   color: white;
   background-color: red;
   padding: 2px 50px;
@@ -112,7 +117,7 @@
 @media (max-width: 768px) {
   .objcards {
     width: 100%;
-    padding: 20px;
+    padding: 20px 10px;
   }
 }
 
