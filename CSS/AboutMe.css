@@ -11,7 +11,8 @@ main {
   flex-direction: column;
   position: relative;
   background-color: #938155;
-  background-image: url(../materials/photos/鄉村背景.jpg);
+  /* background-image: url(../materials/photos/鄉村背景.jpg); */
+  background-image: linear-gradient(45deg, #020001, #876741);
   transition: 1s;
 }
 
@@ -45,6 +46,18 @@ main h1 {
   border-radius: 30px;
   background-color: #f7f6ee;
   margin-top: 7vh;
+  transition: 2s;
+}
+
+.introducing_card:hover {
+  transform: scale(1.01);
+}
+
+.introducing_card:hover .circle {
+  width: 115px;
+  height: 115px;
+  right: -30px;
+  bottom: -50px;
 }
 
 .PersonalPhoto {
@@ -78,6 +91,18 @@ main h1 {
   line-height: 20px;
   font-size: 14px;
   font-weight: 500;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #cbae88;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #938155;
+  right: -20px;
+  bottom: -20px;
+  transition: 0.5s;
 }
 
 .ServerStuff {
@@ -154,6 +179,10 @@ iframe {
     padding: 0;
     background: none;
     overflow: visible;
+  }
+
+  .circle {
+    display: none;
   }
 
   .introducing_card h2 {

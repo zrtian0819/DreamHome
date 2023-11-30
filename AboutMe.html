@@ -33,17 +33,15 @@
           </div>
 
           <div class="right">
-            <h2 class="name">您好! 我是{{name}}</h2>
+            <h2 class="name">我是{{name}}</h2>
             <p>
               歡迎來到「夢想家不動產」。太平洋房屋友成大湳店實
               體店面位置在桃園市八德區大智路73號。我們希望能夠傳遞正面的訊息和內容。感謝大家來到我的網站！如果你喜歡我們的內容，萬分感謝.
-              您要委託或看房歡迎來電洽詢 0915-309185 陳小姐。 
-              <p class="cardCaption">✨服務項目：</p>
-              <div class="ServerStuff" v-for="item in serverItem"
-                >{{item}}</div
-              >
+              您要委託或看房歡迎來電洽詢 0915-309185 陳小姐。
             </p>
-
+            <p class="cardCaption">✨服務項目：</p>
+            <div class="ServerStuff" v-for="item in serverItem">{{item}}</div>
+            <div class="circle"></div>
             <div class="line_info">
               <img
                 class="linePhoto"
@@ -55,6 +53,19 @@
           </div>
         </div>
       </div>
+
+      <!-- <div class="youtubeVideo">
+        <br /><br />
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Uz8vPWdhQ5Q?si=q9THDo3ND-R1qVSO"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div> -->
 
       <div class="location">
         <h1>📍聯絡地點</h1>
@@ -94,7 +105,13 @@
     <footer id="bottom" class="bot">
       <h2>{{ linkPressWords }}</h2>
       <div class="icons">
-        <a v-for="j in Icon" :href="j.link" v-show="j.display" class="icon">
+        <a
+          v-for="j in Icon"
+          :href="j.link"
+          v-show="j.display"
+          class="icon"
+          target="_blank"
+        >
           <img :src="j.src" />
         </a>
       </div>

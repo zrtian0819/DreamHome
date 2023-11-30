@@ -24,8 +24,84 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  min-height: 80vh;
   /* min-height: 500px; */
+}
+
+.filterRegion {
+  /* width: 300px; */
+
+  /* background-color: #39536e; */
+  background-image: linear-gradient(#39536e, #4f7193);
+  padding: 1rem;
+  box-shadow: 0 0 20px #bababa;
+  z-index: 5;
+}
+
+.filterSwitch {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  /* box-shadow: 0 0 10px gray; */
+  cursor: pointer;
+  background-color: #39536e;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  top: 18vh;
+  left: 2vw;
+  z-index: 5;
+}
+
+.filterSwitch:hover {
+  transform: scale(1.05);
+}
+
+.filterSwitch:active {
+  transform: scale(0.97);
+}
+
+.filterSelector {
+  padding: 15px;
+}
+
+.cross {
+  display: none;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.cross:active {
+  transform: scale(0.8);
+}
+
+.filterSelector label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.filterSelector span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.filterInput {
+  border-radius: 5px;
+  font-size: 14px;
+  height: 30px;
+  margin-bottom: 15px;
 }
 
 .objcards {
@@ -36,22 +112,27 @@
   width: 90%;
   /* padding: 20px 30px; */
   /* justify-content: space-between; */
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .objcard {
   width: 230px;
   height: 300px;
-  margin: 15px;
+  margin: 20px;
   box-shadow: 3px 3px 7px #bababa;
   min-width: 230px;
   background-color: #f7f6ee;
   position: relative;
   overflow: hidden;
   border-radius: 5px;
+  cursor: pointer;
 }
 .objcard:hover {
   box-shadow: 0 0 20px #bababa;
+}
+.objcard:active {
+  transition: 0s;
+  transform: scale(0.98);
 }
 
 .photo {
@@ -103,15 +184,22 @@
   align-self: flex-end;
 }
 
-.lowprice {
+.specialPrompt {
   position: absolute;
   font-size: 20px;
   top: 20px;
   right: -55px;
   color: white;
-  background-color: red;
   padding: 2px 50px;
   transform: rotate(45deg);
+}
+
+.lowprice {
+  background-color: red;
+}
+
+.discussion {
+  background-color: forestgreen;
 }
 
 @media (max-width: 768px) {
@@ -119,15 +207,37 @@
     width: 100%;
     padding: 20px 10px;
   }
+
+  .filterRegion {
+    display: none;
+  }
+
+  .showFilter {
+    display: block;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cross {
+    display: block;
+  }
 }
 
 @media (max-width: 435px) {
   .objcard {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 
   .photo {
     height: 30vh;
+  }
+
+  .filterRegion {
+    width: 100%;
   }
 }

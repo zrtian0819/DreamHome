@@ -21,15 +21,46 @@
     </div>
 
     <main id="middle" class="mid">
-      <div class="searchBar">
+      <!-- <div class="searchBar">
         <h1>這裡預計是篩選區塊</h1>
-        <!-- <input type="text" /> -->
-      </div>
+        <input type="text" />
+      </div> -->
 
-      <div class="objectRegion">
+      <div class="objectRegion" id="objectRegion">
+        <div class="filterSwitch" @click="openfilter">▶️</div>
+
+        <div class="filterRegion" id="filter" ref="filterRegion">
+          <h2 style="color: white">👉我想找物件</h2>
+          <div class="filterSelector">
+            <label>關鍵字</label>
+            <br />
+            <input
+              class="filterInput"
+              placeholder="輸入文字"
+              v-model="keyWords"
+            />
+
+            <br />
+
+            <label>我的預算(單位:萬)</label>
+            <br />
+            <input
+              class="filterInput"
+              placeholder="輸入數字"
+              v-model="budget"
+            />
+          </div>
+
+          <div class="cross" @click="closefilter">×</div>
+        </div>
+
         <div id="objcards" class="objcards">
           <!-- 單張卡 -->
-          <div v-for="obj in cards" class="objcard hoverZoomIn">
+          <div
+            v-for="obj in cards"
+            class="objcard hoverZoomIn"
+            v-if="((obj.price<=budget) && (obj.objName.indexOf(keyWords)!=-1))"
+          >
             <div class="photo">
               <img :src="obj.photoLink" alt="房屋照片" />
             </div>
@@ -38,28 +69,35 @@
               <span>{{ obj.city }}</span>
               <span class="objtype">{{ obj.objType }}</span><br />
               <span class="delPrice" v-show="obj.discount"
-                >{{ Math.round(obj.price*1.05) }}萬</span
+                >{{ Math.round(obj.price*1.06) }}萬</span
               >
               <span class="objprice">{{ obj.price }}萬</span>
               <div class="WantToSee">看更多...</div>
-              <div v-show="obj.discount" class="lowprice">賣方降價</div>
+              <div v-show="obj.discount" class="specialPrompt lowprice">
+                賣方降價
+              </div>
+              <div v-show="obj.discussion" class="specialPrompt discussion">
+                議價中
+              </div>
             </div>
           </div>
           <!-- 單張卡 -->
         </div>
       </div>
-
-      <!-- <ul class="pages">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul> -->
     </main>
 
     <footer id="bottom" class="bot">
       <h2>{{ linkPressWords }}</h2>
+      <h3>以上資料為作品使用，並非真實訊息。</h3>
+      <br />
       <div class="icons">
-        <a v-for="j in Icon" :href="j.link" v-show="j.display" class="icon">
+        <a
+          v-for="j in Icon"
+          :href="j.link"
+          v-show="j.display"
+          class="icon"
+          target="_blank"
+        >
           <img :src="j.src" />
         </a>
       </div>
