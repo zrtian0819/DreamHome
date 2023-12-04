@@ -49,6 +49,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 6;
 }
 header {
   height: 70px;

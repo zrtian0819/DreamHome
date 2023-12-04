@@ -76,10 +76,12 @@ var app = new Vue({
       filterR.classList.add("showFilter");
       // filterR.scrollIntoView();
       window.scrollTo(top);
+      console.log("open filter");
     },
     closefilter() {
       filterR = this.$refs.filterRegion;
       filterR.classList.remove("showFilter");
+      console.log("close filter");
     },
   },
 });
