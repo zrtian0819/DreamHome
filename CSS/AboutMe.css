@@ -1,6 +1,6 @@
 main * {
-  /* border: 1px solid black; */
-  /* border: 1px solid white; */
+  /* border: 1px solid black;
+  border: 1px solid white; */
 }
 
 main {
@@ -17,7 +17,7 @@ main {
 }
 
 main h1 {
-  margin: 20px 0 10px 0;
+  margin: 20px 0 15px 0;
   color: #f7f6ee;
 }
 
@@ -29,15 +29,14 @@ main h1 {
 .bgc img {
   width: 100%;
   height: auto;
-
   background-repeat: no-repeat;
   background-size: cover;
   /* position: absolute; */
 }
 
 .introducing_card {
-  height: 420px;
-  width: 730px;
+  height: 500px;
+  width: 800px;
   /* padding: 20px; */
   overflow: hidden;
   display: flex;
@@ -45,12 +44,13 @@ main h1 {
   align-items: center;
   border-radius: 30px;
   background-color: #f7f6ee;
-  margin-top: 7vh;
+  margin-top: 5vh;
   transition: 2s;
 }
 
 .introducing_card:hover {
   transform: scale(1.01);
+  box-shadow: 0 0 3rem white;
 }
 
 .introducing_card:hover .circle {
@@ -66,6 +66,7 @@ main h1 {
   /* background-repeat: no-repeat; */
   background-size: cover;
   /* object-fit: cover; */
+  transition: 20s;
 }
 
 .introducing_card .left {
@@ -105,19 +106,33 @@ main h1 {
   transition: 0.5s;
 }
 
+.ServerStuffs {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .ServerStuff {
-  background-color: #cbae88;
-  padding: 5px;
+  background-color: #65461e;
+  padding: 10px 7px;
   margin: 3px 5px;
   display: inline-block;
-  border-radius: 5px;
-  font-weight: 700;
-  transition: 0.3s;
+  border-radius: 0.75rem;
+  font-weight: 400;
+  transition: 0.1s;
   font-size: 10px;
+  color: white;
+  cursor: pointer;
+  z-index: 3;
 }
 .ServerStuff:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 50px #ffd59a;
+  transform: scale(2);
+  box-shadow: 0 0 1rem #65461e;
+  color: #65461e;
+  font-weight: 700;
+  background-color: #f3dfc2;
+  z-index: 4;
 }
 
 .line_info {
@@ -144,7 +159,7 @@ iframe {
 
 .location,
 .shake {
-  width: 70%;
+  width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,6 +196,10 @@ iframe {
     overflow: visible;
   }
 
+  .introducing_card:hover {
+    box-shadow: none;
+  }
+
   .circle {
     display: none;
   }
@@ -197,7 +216,7 @@ iframe {
   .PersonalPhoto {
     position: relative;
     top: 15px;
-    border-radius: 10px;
+    border-radius: 3rem;
   }
 
   .introducing_card .right {
@@ -205,6 +224,10 @@ iframe {
     border-radius: 20px;
     background-color: #f7f6ee;
     /* min-width: 300px; */
+  }
+
+  .ServerStuffs {
+    justify-content: start;
   }
 
   .line_info {

@@ -67,6 +67,18 @@ var app = new Vue({
         discount: true,
         discussion: false,
       },
+      {
+        objName: "郊區好景兩房",
+        photoLink:
+          "https://image.cache.storm.mg/styles/smg-800x533-fp/s3/media/image/2021/03/12/20210312-023258_U20525_M677707_4213.jpg?itok=1SMfsFlZ",
+        city: "桃園區",
+        address: "",
+        objType: "電梯大樓",
+        spaceDiv: "二房二廳一衛浴",
+        price: 872,
+        discount: false,
+        discussion: false,
+      },
     ],
   },
   methods: {

@@ -28,16 +28,12 @@
     </div>
 
     <main id="middle" class="mid">
-      <!-- <div class="searchBar">
-        <h1>這裡預計是篩選區塊</h1>
-        <input type="text" />
-      </div> -->
-
       <div class="objectRegion" id="objectRegion">
         <div class="filterSwitch" @click="openfilter">
           <i class="fa-solid fa-list-check"></i>
         </div>
 
+        <!-- 篩選工具 -->
         <div class="filterRegion" id="filter" ref="filterRegion">
           <h2 style="color: white">🔺我想找物件</h2>
           <div class="filterSelector">
@@ -58,10 +54,21 @@
               placeholder="輸入數字"
               v-model="budget"
             />
+
+            <br />
+            <label>物件類型(還無功能)</label><br />
+            <select name="objType" id="objType">
+              <option value="none" disabled>請選擇</option>
+              <option value="">透天別墅</option>
+              <option value="">透天</option>
+              <option value="">電梯大樓</option>
+              <option value="">公寓</option>
+            </select>
           </div>
 
           <div class="cross" @click="closefilter">×</div>
         </div>
+        <!-- 篩選工具 -->
 
         <div id="objcards" class="objcards" @click="closefilter">
           <!-- 單張卡 -->
@@ -91,6 +98,9 @@
             </div>
           </div>
           <!-- 單張卡 -->
+          <!-- <div class="no_find" v-show="">
+            <p>沒有找到物件</p>
+          </div> -->
         </div>
       </div>
     </main>
