@@ -6,22 +6,22 @@ var navLink = new Vue({
     linkButton: [
       {
         title: "關於我",
-        link: "AboutMe.html",
+        link: "./AboutMe.html",
         style: "btn",
       },
       {
         title: "找房子",
-        link: "Findhouse.html",
+        link: "./Findhouse.html",
         style: "btn",
       },
       {
         title: "找租屋",
-        link: "#bottom",
+        link: "./doNotEsrablish.html",
         style: "btn",
       },
       {
         title: "找土地",
-        link: "#bottom",
+        link: "./doNotEsrablish.html",
         style: "btn",
       },
     ],
