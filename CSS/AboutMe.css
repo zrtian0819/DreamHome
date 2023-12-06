@@ -1,6 +1,6 @@
 main * {
-  /* border: 1px solid black;
-  border: 1px solid white; */
+  /* border: 1px solid black; */
+  /* border: 1px solid white; */
 }
 
 main {
@@ -30,14 +30,13 @@ main h1 {
   width: 100%;
   height: auto;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
   /* position: absolute; */
 }
 
 .introducing_card {
-  height: 500px;
+  height: 480px;
   width: 800px;
-  /* padding: 20px; */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -46,6 +45,7 @@ main h1 {
   background-color: #f7f6ee;
   margin-top: 5vh;
   transition: 2s;
+  /* position: relative; */
 }
 
 .introducing_card:hover {
@@ -63,10 +63,9 @@ main h1 {
 .PersonalPhoto {
   height: 100%;
   background-position: center center;
-  /* background-repeat: no-repeat; */
+  background-repeat: no-repeat;
   background-size: cover;
   /* object-fit: cover; */
-  transition: 20s;
 }
 
 .introducing_card .left {
@@ -76,21 +75,22 @@ main h1 {
 
 .introducing_card .right {
   height: 100%;
-  /* flex: 6; */
+  /* flex: 10; */
+  /* width: 60%; */
   padding: 10px 30px;
   /* overflow: auto; */
 }
 
 .right h2 {
   margin-top: 5px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .right p {
   margin-top: 5px;
   letter-spacing: 1.5px;
   line-height: 20px;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -115,7 +115,7 @@ main h1 {
 
 .ServerStuff {
   background-color: #65461e;
-  padding: 10px 7px;
+  padding: 7px 5px;
   margin: 3px 5px;
   display: inline-block;
   border-radius: 0.75rem;
@@ -138,6 +138,7 @@ main h1 {
 .line_info {
   display: flex;
   margin-top: 10px;
+  justify-content: center;
   /* justify-content: center; */
 }
 
@@ -148,6 +149,7 @@ main h1 {
 .linePhoto {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
 }
 
 iframe {
@@ -210,19 +212,20 @@ iframe {
 
   .introducing_card .left {
     /* width: 100%; */
-    height: 40vh;
+    height: 30vh;
   }
 
   .PersonalPhoto {
     position: relative;
-    top: 15px;
-    border-radius: 3rem;
+    top: 20px;
+    border-radius: 2rem;
   }
 
   .introducing_card .right {
     padding: 30px;
     border-radius: 20px;
     background-color: #f7f6ee;
+    min-width: 200px;
     /* min-width: 300px; */
   }
 
@@ -265,6 +268,6 @@ iframe {
 @media (max-width: 450px) {
   .right h2 {
     margin-top: 5px;
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
